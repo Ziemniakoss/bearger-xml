@@ -10,5 +10,11 @@
 			"protected",
 			"value"
 		]
+	},
+	"sortingOrder": {
+		"labels": {
+			"sortByFields": ["fullName"],
+			"caseSensitive": false
+		}
 	}
 }

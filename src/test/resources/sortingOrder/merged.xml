@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels>
+    <labels>
+        <fullName>label1</fullName>
+        <value>Value of label 1</value>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No. 1</shortDescription>
+    </labels>
+    <labels>
+        <fullName>label6</fullName>
+        <value>Value of label 6</value>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No. 6</shortDescription>
+    </labels>
+    <labels>
+        <fullName>label4</fullName>
+        <value>Value of label 4</value>
+        <language>en_US</language>
+        <protected>false</protected>
+        <categories>Test,Category</categories>
+        <shortDescription>This label was added</shortDescription>
+    </labels>
+    <labels>
+        <fullName>label2</fullName>
+        <value>Value of label 2</value>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No. 2</shortDescription>
+    </labels>
+</CustomLabels>

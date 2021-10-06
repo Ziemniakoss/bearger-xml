@@ -2,7 +2,15 @@
 <Users>
     <GroupProperites>
         <country>Poland</country>
+<<<<<<< ORIGINAL
         <lastBackupDate>2020-12-24</lastBackupDate>
+=======
+        <lastBackupDate>2021-12-24</lastBackupDate>
+>>>>>>> MERGED
+<<<<<<< ORIGINAL
+=======
+        <status>After crash</status>
+>>>>>>> MERGED
     </GroupProperites>
     <User>
         <id>3</id>
@@ -61,11 +69,11 @@
                 <description>Normal head</description>
 =======
                 <description>Heavily damaged head</description>
->>>>>>>
+>>>>>>> MERGED
 <<<<<<< ORIGINAL
 =======
                 <status>In repair</status>
->>>>>>>
+>>>>>>> MERGED
             </BodyPart>
 <<<<<<< ORIGINAL
 =======

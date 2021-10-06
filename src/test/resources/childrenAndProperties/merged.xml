@@ -2,7 +2,8 @@
 <Users>
     <GroupProperites>
         <country>Poland</country>
-        <lastBackupDate>2020-12-24</lastBackupDate>
+        <status>After crash</status>
+        <lastBackupDate>2021-12-24</lastBackupDate>
     </GroupProperites>
     <User>
         <id>3</id>
@@ -33,7 +34,7 @@
             <BodyPart>
                 <name>head</name>
                 <description>Heavily damaged head</description>
-                <status>in repair</status>
+                <status>In repair</status>
             </BodyPart>
             <BodyPart>
                 <name>arm</name>

@@ -1,7 +1,6 @@
 package pl.ziemniakos.bearger_xml
 
 import java.nio.file.Paths
-import kotlin.io.path.Path
 import kotlin.io.path.bufferedWriter
 import kotlin.math.max
 
@@ -12,19 +11,20 @@ class TestingUtils {
 	}
 
 	fun assertEquals(expected: String, result: String) {
-		val splitedExpected = expected.split("\n")//.map { it.replace(" ", "<S>").replace("\n", "<N>").replace("\r", "<R>") }
-		val splitedResult = result.split("\n")//.map { it.replace(" ", "<S>").replace("\n", "<N>").replace("\r", "<R>") }
+		val splitedExpected = expected.split("\n").map { replaceWhiteSpaceWithTags(it) }
+		val splitedResult = result.split("\n").map { replaceWhiteSpaceWithTags(it) }
 		var mismatched = false
 		matchIntoPairs(splitedExpected, splitedResult)
 			.forEachIndexed { index, it ->
 				if (it.first != it.second) {
 					println("Mismatch in line ${index + 1}:")
+					println(it.first?.length == it.second?.length)
 					println("EXPECTED: ${it.first}")
 					println("RESULT:   ${it.second}")
 					mismatched = true
 				}
 			}
-		if(mismatched) {
+		if (mismatched) {
 			val output = Paths.get("test-result.xml").bufferedWriter()
 			output.write(result)
 			output.close()
@@ -43,5 +43,13 @@ class TestingUtils {
 			))
 		}
 		return linesPairs
+	}
+
+	private fun replaceWhiteSpaceWithTags(str: String): String {
+		return str
+			.replace(" ", "<S>")
+			.replace("\n", "<N>")
+			.replace("\r", "<R>")
+			.replace("\t", "<T>")
 	}
 }

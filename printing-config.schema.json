@@ -29,8 +29,12 @@
 				}
 			}
 		},
-		"childrenSortingOrder": {
-			"type": "Object"
+		"sortingOrder": {
+			"type": "object",
+			"description": "Defines order in which multiple nodes with same name should be printed out",
+			"additionalProperties": {
+					"$ref": "#/definitions/sortOrder"
+			}
 		}
 	},
 	"definitions": {
