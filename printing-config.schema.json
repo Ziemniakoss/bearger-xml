@@ -1,0 +1,53 @@
+{
+	"schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://ziemaniakoss.pl/beargers/configs/xml-config.json",
+	"title": "Xml bearger config file",
+	"type": "object",
+	"properties": {
+		"indentSize": {
+			"type": "number",
+			"description": "How many indent characters should be printed per indent",
+			"default": 4
+		},
+		"useTabs": {
+			"type": "boolean",
+			"description": "Use tab character instead of spaces",
+			"default": false
+		},
+		"newLineCharacter": {
+			"enum": ["NORMAL", "WINDOWS"],
+			"default": "NORMAL",
+			"description": "Override new line character"
+		},
+		"printingOrder": {
+			"type": "object",
+			"description": "tagName -> properties printing orderd",
+			"additionalParameters": {
+				"type": "array",
+				"items": {
+					"type": "string"
+				}
+			}
+		},
+		"childrenSortingOrder": {
+			"type": "Object"
+		}
+	},
+	"definitions": {
+		"sortOrder": {
+			"type": "object",
+			"properties": {
+				"sortByFields": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"caseSensitive": {
+					"type": "boolean"
+				}
+			}
+		}
+	}
+}
+

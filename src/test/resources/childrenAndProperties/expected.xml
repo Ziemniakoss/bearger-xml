@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+    <GroupProperites>
+        <country>Poland</country>
+        <lastBackupDate>2020-12-24</lastBackupDate>
+    </GroupProperites>
+    <User>
+        <id>3</id>
+        <BodyParts>
+            <BodyPart>
+                <name>leg</name>
+                <side>left</side>
+<<<<<<< ORIGINAL
+                <description>Short original left leg description</description>
+=======
+                <description>Heavily damaged</description>
+>>>>>>> MERGED
+            </BodyPart>
+            <BodyPart>
+                <name>leg</name>
+                <side>right</side>
+                <description>Short original right leg description</description>
+            </BodyPart>
+<<<<<<< ORIGINAL
+            <BodyPart>
+                <name>arm</name>
+                <side>left</side>
+            </BodyPart>
+=======
+>>>>>>> MERGED
+            <BodyPart>
+                <name>arm</name>
+                <side>right</side>
+<<<<<<< ORIGINAL
+=======
+                <description>Hardly working</description>
+>>>>>>> MERGED
+<<<<<<< ORIGINAL
+=======
+                <Defect>
+                    <description>Has 10 holes in biceps and falling off fingers</description>
+                </Defect>
+>>>>>>> MERGED
+            </BodyPart>
+        </BodyParts>
+    </User>
+<<<<<<< ORIGINAL
+    <User>
+        <id>2</id>
+        <description>Disposable</description>
+        <BodyParts></BodyParts>
+    </User>
+=======
+>>>>>>> MERGED
+    <User>
+        <id>4</id>
+        <BodyParts>
+            <BodyPart>
+                <name>head</name>
+<<<<<<< ORIGINAL
+                <description>Normal head</description>
+=======
+                <description>Heavily damaged head</description>
+>>>>>>>
+<<<<<<< ORIGINAL
+=======
+                <status>In repair</status>
+>>>>>>>
+            </BodyPart>
+<<<<<<< ORIGINAL
+=======
+            <BodyPart>
+                <name>arm</name>
+                <side>left</side>
+                <description>Mechanical</description>
+            </BodyPart>
+>>>>>>> MERGED
+        </BodyParts>
+    </User>
+</Users>

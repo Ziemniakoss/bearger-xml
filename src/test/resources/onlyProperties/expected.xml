@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+    <User>
+        <id>1000</id>
+        <name>Adam</name>
+<<<<<<< ORIGINAL
+        <surname>Nowak</surname>
+=======
+        <surname>Kowalski</surname>
+>>>>>>> MERGED
+        <age>23</age>
+<<<<<<< ORIGINAL
+=======
+        <isSpy>True</isSpy>
+>>>>>>> MERGED
+    </User>
+    <User>
+        <id>1001</id>
+        <name>Anna</name>
+        <surname>Nowak</surname>
+<<<<<<< ORIGINAL
+        <age>290</age>
+=======
+>>>>>>> MERGED
+    </User>
+<<<<<<< ORIGINAL
+    <User>
+        <id>1010</id>
+        <name>Zbigniew</name>
+        <surname>Kowalski</surname>
+    </User>
+=======
+>>>>>>> MERGED
+<<<<<<< ORIGINAL
+    <User>
+        <id>10231</id>
+        <name>Anonymous</name>
+    </User>
+=======
+>>>>>>> MERGED
+</Users>

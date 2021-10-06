@@ -1,0 +1,59 @@
+{
+	"applicationVisibilities": {
+		"keyFields": ["application"]
+	},
+	"classAccesses": {
+		"keyFields": ["apexClass"]
+	},
+	"customMetadataTypeAccesses": {
+		"keyFields": ["name"]
+	},
+	"customPermissions": {
+		"keyFields": ["name"]
+	},
+	"customSettingAccesses": {
+		"keyFields": ["name"]
+	},
+	"externalDataSourceAccesses": {
+		"keyFields": ["externalDataSource"]
+	},
+	"fieldLevelSecurities": {
+		"keyFields": ["field"]
+	},
+	"fieldPermissions": {
+		"keyFields": ["field"]
+	},
+	"flowAccesses": {
+		"keyFields": ["flow"]
+	},
+	"layoutAssignments": {
+		"keyFields": ["layout", "recordType"]
+	},
+	"loginFlows": {
+		"keyFields": ["friendlyname"]
+	},
+	"loginHours": {
+		"keyFields": ["weekdayStart", "weekdayEnd"]
+	},
+	"loginIpRanges": {
+		"keyFields": ["startAddress", "endAddress"]
+	},
+	"objectPermissions": {
+		"keyFields": ["object"]
+	},
+	"pageAccesses": {
+		"keyFields": ["apexPage"]
+	},
+	"profileActionOverrides": {
+		"keyFields": ["pageOrSobjectType", "recordType", "actionName"]
+	},
+	"recordTypeVisibilities": {
+		"keyFields": ["recordType"]
+	},
+	"tabVisibilities": {
+		"keyFields": ["tab"]
+	},
+	"userPermissions": {
+		"keyFields": ["name"]
+	}
+}

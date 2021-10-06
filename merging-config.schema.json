@@ -1,0 +1,26 @@
+{
+	"schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://ziemaniakoss.pl/beargers/configs/xml-merging.json",
+	"title": "Xml bearger config file",
+	"type": "object",
+	"additionalProperties": {
+		"$ref": "#/definitions/mergingStrategyDefinition"
+	},
+	"definitions": {
+		"mergingStrategyDefinition": {
+			"type": "object",
+			"required": [
+				"keyFields"
+			],
+			"properties": {
+				"keyFields": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"description": "Match nodes by this properties"
+				}
+			}
+		}
+	}
+}

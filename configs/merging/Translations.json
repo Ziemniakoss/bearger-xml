@@ -1,0 +1,50 @@
+{
+	"globalPicklists": {
+		"keyFields": ["name"]
+	},
+	"customApplication": {
+		"keyFields": ["name"]
+	},
+	"customPageWebLinks": {
+		"keyFields": ["name"]
+	},
+	"customLabels": {
+		"keyFields": ["name"]
+	},
+	"customTabs": {
+		"keyFields": ["name"]
+	},
+	"flowDefinitions": {
+		"keyFields": ["fullName"]
+	},
+	"choices": {
+		"keyFields": ["name"]
+	},
+	"screens": {
+		"keyFields": ["name"]
+	},
+	"stages": {
+		"keyFields": ["name"]
+	},
+	"prompts": {
+		"keyFields": ["name"]
+	},
+	"promptVersions": {
+		"keyFields": ["name"]
+	},
+	"quickActions": {
+		"keyFields": ["name"]
+	},
+	"reportTypes": {
+		"keyFields": ["name"]
+	},
+	"sections": {
+		"keyFields": ["name"]
+	},
+	"columns": {
+		"keyFields": ["name"]
+	},
+	"scontrols": {
+		"keyFields": ["name"]
+	}
+}

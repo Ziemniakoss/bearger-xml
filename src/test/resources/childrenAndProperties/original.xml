@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+    <GroupProperites>
+        <country>Poland</country>
+        <lastBackupDate>2020-12-24</lastBackupDate>
+    </GroupProperites>
+    <User>
+        <id>3</id>
+        <BodyParts>
+            <BodyPart>
+                <name>leg</name>
+                <side>left</side>
+                <description>Short original left leg description</description>
+            </BodyPart>
+            <BodyPart>
+                <name>leg</name>
+                <side>right</side>
+                <description>Short original right leg description</description>
+            </BodyPart>
+            <BodyPart>
+                <name>arm</name>
+                <side>left</side>
+            </BodyPart>
+            <BodyPart>
+                <name>arm</name>
+                <side>right</side>
+            </BodyPart>
+        </BodyParts>
+    </User>
+    <User>
+        <id>2</id>
+        <description>Disposable</description>
+        <BodyParts></BodyParts>
+    </User>
+    <User>
+        <id>4</id>
+        <BodyParts>
+            <BodyPart>
+                <name>head</name>
+                <description>Normal head</description>
+            </BodyPart>
+        </BodyParts>
+    </User>
+</Users>

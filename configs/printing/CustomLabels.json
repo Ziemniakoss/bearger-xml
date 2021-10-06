@@ -1,0 +1,14 @@
+{
+	"indentSize": 4,
+	"useTabs": false,
+	"newLineCharacter": "NORMAL",
+	"printingOrder": {
+		"labels": [
+			"fullName",
+			"categories",
+			"language",
+			"protected",
+			"value"
+		]
+	}
+}

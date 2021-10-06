@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Users>
+    <User>
+        <id>1000</id>
+        <name>Adam</name>
+        <surname>Nowak</surname>
+        <age>23</age>
+    </User>
+    <User>
+        <id>1001</id>
+        <name>Anna</name>
+        <surname>Nowak</surname>
+        <age>290</age>
+    </User>
+    <User>
+        <id>1010</id>
+        <name>Zbigniew</name>
+        <surname>Kowalski</surname>
+    </User>
+    <User>
+        <id>10231</id>
+        <name>Anonymous</name>
+    </User>
+</Users>

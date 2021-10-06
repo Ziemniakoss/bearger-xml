@@ -1,0 +1,38 @@
+{
+	"caseValues": {
+		"keyFields": [""]
+	},
+	"fields": {
+		"keyFields": ["name"]
+	},
+	"fieldSets": {
+		"keyFields": ["name"]
+	},
+	"layouts": {
+		"keyFields": ["layout"]
+	},
+	"sections":{
+		"keyFields": ["section"]
+	},
+	"namedFilters": {
+		"keyFields": ["value"]
+	},
+	"quickActions": {
+		"keyFields": ["name"]
+	},
+	"recordTypes": {
+		"keyFields": ["name"]
+	},
+	"sharingReasons": {
+		"keyFields": ["name"]
+	},
+	"validationRules": {
+		"keyFields": ["name"]
+	},
+	"webLinks": {
+		"keyFields": ["name"]
+	},
+	"workFlowTasks": {
+		"keyFields": ["name"]
+	}
+}
