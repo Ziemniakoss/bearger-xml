@@ -31,11 +31,11 @@ class ArgumentParser : IArgumentsParser {
 			ArgType.Boolean,
 			fullName = "use-original-file",
 			description = """Use same file as output. If set to false, it will append ".bearged""""
-		).default(true)
+		).default(false)
 		val fileNames by parser.argument(
 			ArgType.String,
 			"fileNames",
-			description = "Files to process"
+			description = "Files to process. In Differ mode you have to specify 3 arguments: first and second are files ou want to compare and third is output file"
 		).vararg()
 
 		val mode by parser.option(
@@ -45,10 +45,6 @@ class ArgumentParser : IArgumentsParser {
 		).default(Mode.BEARGER)
 
 		parser.parse(args)
-		println(originalBranchName)
-		println(mergedBranchName)
-		println(fileNames)
-
 		return when (mode) {
 			Mode.BEARGER -> {
 				TODO("not implemented yet, please use differ")

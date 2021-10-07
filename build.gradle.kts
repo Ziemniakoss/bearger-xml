@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "pl.ziemniakoss"
-version = "1.0-SNAPSHOT"
+version = "0.66"
 
 repositories {
 	mavenCentral()
@@ -22,7 +22,15 @@ dependencies {
 tasks.test {
 	useJUnitPlatform()
 }
-
+tasks.jar {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+	manifest {
+		attributes["Main-Class"] = "MainKt"
+	}
+	configurations["compileClasspath"].forEach { file: File ->
+		from(zipTree(file.absoluteFile))
+	}
+}
 tasks.withType<KotlinCompile>() {
 	kotlinOptions.jvmTarget = "1.8"
 }
