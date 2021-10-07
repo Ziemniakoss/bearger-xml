@@ -1,6 +1,17 @@
-import pl.ziemniakos.bearger_xml.Bearger
+import pl.ziemniakos.bearger_xml.ArgumentParser
+import pl.ziemniakos.bearger_xml.IArgumentsParser
+import kotlin.system.exitProcess
 
-// TODO more modes
 fun main(args: Array<String>) {
-	Bearger(args).run()
+	val map = mapOf(
+		listOf("Ala", "ma", "kota") to 123,
+		listOf("pies") to 90,
+	)
+	println(map[listOf("pies")])
+	val argParser: IArgumentsParser = ArgumentParser()
+	try {
+		argParser.parseArguments(args).run()
+	} catch (_: IllegalArgumentException) {
+		exitProcess(1)
+	}
 }

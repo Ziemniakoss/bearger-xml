@@ -19,6 +19,7 @@ internal class XmlNodeTest {
 
 		val parsedField = xmlNode.children["fields"]!!.first()
 		assertEquals(0, parsedField.children.size)
+		assertEquals(xmlNode, parsedField.parent)
 
 		val parsedFieldProperties = parsedField.properties
 		assertEquals(5, parsedFieldProperties.size)
