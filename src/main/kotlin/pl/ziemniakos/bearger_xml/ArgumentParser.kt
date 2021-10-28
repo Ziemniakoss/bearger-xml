@@ -4,6 +4,7 @@ import kotlinx.cli.ArgParser
 import kotlinx.cli.ArgType
 import kotlinx.cli.default
 import kotlinx.cli.vararg
+import pl.ziemniakos.bearger_xml.sorting.Sorter
 
 enum class Mode {
 	BEARGER,
@@ -47,7 +48,7 @@ class ArgumentParser : IArgumentsParser {
 		parser.parse(args)
 		return when (mode) {
 			Mode.BEARGER -> {
-				TODO("not implemented yet, please use differ")
+				TODO("\uD83D\uDC3Bging is not implemented yet, please use differ mode (--mode differ), for more help please use --help")
 				if (originalBranchName == null) {
 					println("Please specify original branch name")
 					throw IllegalArgumentException("Please specify original branch name (use -h or --help to get help)")

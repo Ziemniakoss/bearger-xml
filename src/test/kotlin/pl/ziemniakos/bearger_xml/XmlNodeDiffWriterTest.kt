@@ -1,7 +1,11 @@
 package pl.ziemniakos.bearger_xml
 
 import org.junit.jupiter.api.Test
-import pl.ziemniakos.bearger_xml.configs.*
+import pl.ziemniakos.bearger_xml.configs.merging.IMergingConfigSupplier
+import pl.ziemniakos.bearger_xml.configs.merging.MergingConfig
+import pl.ziemniakos.bearger_xml.configs.merging.MergingStrategy
+import pl.ziemniakos.bearger_xml.configs.printing.IPrintingConfigSupplier
+import pl.ziemniakos.bearger_xml.configs.printing.PrintingConfig
 import java.nio.file.Paths
 import kotlin.io.path.createTempFile
 import kotlin.io.path.readText

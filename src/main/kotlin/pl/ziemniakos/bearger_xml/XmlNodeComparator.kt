@@ -1,6 +1,6 @@
 package pl.ziemniakos.bearger_xml
 
-import pl.ziemniakos.bearger_xml.configs.NodesPrintingOrderConfig
+import pl.ziemniakos.bearger_xml.configs.printing.NodesPrintingOrderConfig
 
 class XmlNodeComparator(private val nodesPrintingOrderConfig: NodesPrintingOrderConfig) : Comparator<XmlNode>{
 	override fun compare(first: XmlNode?, second: XmlNode?): Int {

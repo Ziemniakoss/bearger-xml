@@ -1,7 +1,7 @@
 package pl.ziemniakos.bearger_xml
 
-import pl.ziemniakos.bearger_xml.configs.MergingConfigSupplier
-import pl.ziemniakos.bearger_xml.configs.PrintingConfigSupplier
+import pl.ziemniakos.bearger_xml.configs.merging.MergingConfigSupplier
+import pl.ziemniakos.bearger_xml.configs.printing.PrintingConfigSupplier
 import java.nio.file.Paths
 
 /**

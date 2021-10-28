@@ -1,4 +1,4 @@
-package pl.ziemniakos.bearger_xml.configs
+package pl.ziemniakos.bearger_xml.configs.merging
 
 interface IMergingConfigSupplier {
 	/**

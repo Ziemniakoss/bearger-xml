@@ -1,7 +1,10 @@
-package pl.ziemniakos.bearger_xml
+package pl.ziemniakos.bearger_xml.sorting
 
-import pl.ziemniakos.bearger_xml.configs.MergingConfigSupplier
-import pl.ziemniakos.bearger_xml.configs.PrintingConfigSupplier
+import pl.ziemniakos.bearger_xml.IProgram
+import pl.ziemniakos.bearger_xml.XmlNode
+import pl.ziemniakos.bearger_xml.XmlNodeDiffWriter
+import pl.ziemniakos.bearger_xml.configs.merging.MergingConfigSupplier
+import pl.ziemniakos.bearger_xml.configs.printing.PrintingConfigSupplier
 import java.nio.file.Paths
 
 class Sorter(

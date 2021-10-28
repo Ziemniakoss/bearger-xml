@@ -1,6 +1,10 @@
 package pl.ziemniakos.bearger_xml
 
 import pl.ziemniakos.bearger_xml.configs.*
+import pl.ziemniakos.bearger_xml.configs.merging.IMergingConfigSupplier
+import pl.ziemniakos.bearger_xml.configs.merging.MergingConfig
+import pl.ziemniakos.bearger_xml.configs.printing.IPrintingConfigSupplier
+import pl.ziemniakos.bearger_xml.configs.printing.PrintingConfig
 import java.io.BufferedWriter
 import java.nio.file.Path
 import kotlin.io.path.bufferedWriter

@@ -5,7 +5,7 @@ import com.sun.org.apache.xerces.internal.dom.DeferredTextImpl
 import org.w3c.dom.Document
 import org.w3c.dom.Node
 import org.w3c.dom.NodeList
-import pl.ziemniakos.bearger_xml.configs.MergingConfig
+import pl.ziemniakos.bearger_xml.configs.merging.MergingConfig
 import javax.xml.parsers.DocumentBuilderFactory
 
 class XmlNode(

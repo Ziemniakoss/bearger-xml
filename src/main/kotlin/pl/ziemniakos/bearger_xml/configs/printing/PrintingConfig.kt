@@ -1,4 +1,6 @@
-package pl.ziemniakos.bearger_xml.configs
+package pl.ziemniakos.bearger_xml.configs.printing
+
+import pl.ziemniakos.bearger_xml.configs.NewLineCharacter
 
 class PrintingConfig(
 	val indentSize: Int = 4,
