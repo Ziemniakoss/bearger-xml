@@ -7,7 +7,8 @@ fun main(args: Array<String>) {
 	val argParser: IArgumentsParser = ArgumentParser()
 	try {
 		argParser.parseArguments(args).run()
-	} catch (_: IllegalArgumentException) {
+	} catch (e: IllegalArgumentException) {
+		println(e.message)
 		exitProcess(1)
 	} catch (e: NotImplementedError) {
 		println(e.message)

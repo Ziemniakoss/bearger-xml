@@ -119,7 +119,7 @@ class XmlNodeDiffWriter(
 		} else if(mergedNodeChildrenWithThatName.size == originalNodeChildrenWithThatName.size && originalNodeChildrenWithThatName.size == 1) {
 			writeNodeDiff(output, originalNodeChildrenWithThatName[0], mergedNodeChildrenWithThatName[0], indent + 1, printingConfig, mergingConfig)
 		} else {
-			val mergingStrategy = mergingConfig.mergingStrategies[propertyOrNodeName] ?: throw RuntimeException("Can\t merge nodes ${propertyOrNodeName}, please specify key fields for this node in config file")
+			val mergingStrategy = mergingConfig.mergingStrategies[propertyOrNodeName] ?: throw RuntimeException("Can't merge nodes ${propertyOrNodeName}, please specify key fields for this node in config file")
 			val originalChildrenNodesGroupedByKeyFields = originalNodeChildrenWithThatName.groupBy { createKey(it, mergingStrategy.keyFields) }
 			val mergedChildrenNodesGroupedByKeyFields = mergedNodeChildrenWithThatName.groupBy { createKey(it, mergingStrategy.keyFields) }
 			warmAboutNodeDuplicates(originalChildrenNodesGroupedByKeyFields)
@@ -162,13 +162,20 @@ class XmlNodeDiffWriter(
 		val allPropertiesAndNodesNames = mutableSetOf(*xmlNode.properties.keys.toTypedArray(), *xmlNode.children.keys.toTypedArray())
 		for(propertyOrNodeName in printingConfig.printingOrder[xmlNode.nodeName] ?: listOf()) {
 			writeProperty(output, propertyOrNodeName, xmlNode.properties[propertyOrNodeName], indent + 1, printingConfig)
-			xmlNode.children[propertyOrNodeName]?.forEach { writeNode(output, it, indent + 1, printingConfig, mergingConfig) }
+			val nodesWithName = xmlNode.children[propertyOrNodeName]
+			if(nodesWithName != null){
+				sortNodes(propertyOrNodeName, nodesWithName, printingConfig)
+					.forEach { writeNode(output, it, indent + 1, printingConfig, mergingConfig) }
+			}
 			allPropertiesAndNodesNames.remove(propertyOrNodeName)
 		}
 		for (propertyOrNodeName in allPropertiesAndNodesNames.sorted()) {
-			println("NOT SORTED " + xmlNode.nodeName)
 			writeProperty(output, propertyOrNodeName, xmlNode.properties[propertyOrNodeName], indent + 1, printingConfig)
-			xmlNode.children[propertyOrNodeName]?.forEach { writeNode(output, it, indent + 1, printingConfig, mergingConfig) }
+			val nodesWithName = xmlNode.children[propertyOrNodeName]
+			if(nodesWithName != null){
+				sortNodes(propertyOrNodeName, nodesWithName, printingConfig)
+					.forEach { writeNode(output, it, indent + 1, printingConfig, mergingConfig) }
+			}
 		}
 		indent(output, indent, printingConfig)
 		output.apply {
@@ -178,6 +185,14 @@ class XmlNodeDiffWriter(
 		}
 		writeNewLine(output, printingConfig)
 	}
+
+	private fun sortNodes(nodeName: String, nodes: List<XmlNode>, printingConfig: PrintingConfig): List<XmlNode> {
+		println(nodeName)
+		val sortingRules = printingConfig.sortingOrder[nodeName] ?: return nodes
+		val comparator = XmlNodeComparator(sortingRules)
+		return nodes.sortedWith(comparator)
+	}
+
 
 	private fun writeProperty(output: BufferedWriter, propertyName: String, propertyValue: String?, indent: Int, printingConfig: PrintingConfig) {
 		if(propertyValue == null) {
